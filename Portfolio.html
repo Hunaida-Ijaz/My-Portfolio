@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H. Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #dfe5f3;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(30, 30, 44);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(89, 89, 104);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(30, 30, 44);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px 0;
+            color: rgb(10, 10, 10);
+
+        }
+
+        .leftSection .buttons {
+            padding: 30px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: rgb(169, 210, 226);
+            color: rgb(20, 20, 20);
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+
+
+        }
+
+        .rightSection img {
+            border-radius: 20px;
+            width: 70%;
+            margin: 50px 0;
+
+
+        }
+
+        .purple {
+            color: rgb(100, 180, 211);
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(110, 180, 211);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: rgb(30, 30, 44);
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgb(30, 30, 44);
+            ;
+            margin: 0 100px;
+        }
+
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-text {
+            color: rgb(110, 180, 211);
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(26, 25, 25);
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .thirdSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+        }
+
+        .thirdSection>div {
+            width: 30%;
+        }
+
+        .thirdSection .leftSection {
+            color: rgb(110, 180, 211);
+            font-size: 4rem;
+            margin: 70px 0;
+        }
+
+        .thirdSection .rightSection {
+            color: rgb(30, 30, 44);
+            font-size: 1.5rem;
+            margin: 90px 0;
+            margin-right: 150px;
+        }
+
+        .forthSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+        }
+
+        .forthSection>div {
+            width: 30%;
+        }
+
+        .forthSection .leftSection {
+            color: rgb(110, 180, 211);
+            font-size: 4rem;
+            margin: 70px 0;
+        }
+
+        .forthSection.rightSection {
+
+            font-size: 1.2rem;
+            margin: 40px 0;
+            margin-right: 150px;
+        }
+
+        .h1 {
+            color: rgb(110, 180, 211);
+        }
+
+        .fifthSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+        }
+
+        .fifthSection>div {
+            width: 30%;
+        }
+
+        .fifthSection .leftSection {
+            color: rgb(110, 180, 211);
+            font-size: 4rem;
+            margin: 70px 0;
+        }
+
+
+        .Contact {
+            color: rgb(30, 30, 44);
+            ;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .fifthSection .Button1 {
+            padding: 12px;
+            background: rgb(137, 211, 243);
+            color: rgb(30, 30, 44);
+            border: 2px solid rgb(30, 30, 44);
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .inputs {
+            width: 300px;
+            height: 30px;
+            background-color: rgb(188, 223, 238);
+            color: rgb(30, 30, 44);
+            padding: 8px;
+            margin: 15px 0;
+        }
+
+        footer {
+            background-color: rgb(30, 30, 44);
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 10px 110px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+
+        .h3 {
+            color: rgb(110, 180, 211);
+            font-size: 2rem;
+        }
+
+        .li1 {
+            color: rgb(110, 180, 211);
+            font-size: 1.5rem;
+        }
+
+        .li2 {
+            color: rgb(110, 180, 211);
+            font-size: 1.5rem;
+        }
+
+        .li3 {
+            color: rgb(110, 180, 211);
+            font-size: 1.5rem;
+        }
+
+        .secondSection .h11 {
+            font-size: 3rem;
+            color: rgb(110, 180, 211);
+            margin: 10px 0;
+
+        }
+
+        .li4 {
+            color: rgb(30, 30, 44);
+        }
+
+        .h13 {
+            color: rgb(30, 30, 44);
+        }
+
+        @media (max-width: 768px) {
+
+            .firstSection,
+            .thirdSection,
+            .forthSection,
+            .fifthSection {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .rightSection img {
+                width: 90%;
+                margin: 20px 0;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            .secondSection .box {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+            .secondSection .vertical {
+                margin: 40px 0;
+            }
+
+            .leftSection,
+            .rightSection {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hey!My name is <span class="purple"> Hunaida Ijaz.</span>
+                <div>I am a passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="window.open(MyResume.pdf)">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="pic2.jpeg.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1 class="h11">
+                Work Experience
+            </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="HTML.png" alt="">
+                    <div class="vertical-text">
+                        HTML Developer (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I have a good experiance as a HTML professional in a software house.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="CSS.jpeg" alt="">
+                    <div class="vertical-text">
+                        CSS Professionalist(2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        In 2021,I became a CSS professional.I have an experience in a software house as a good website
+                        designer.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Javascript.jpeg" alt="">
+                    <div class="vertical-text">
+                        JavaScript User (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I have a good experiance as a JavaScript user to build logics and functions as well.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="React.jpeg" alt="">
+                    <div class="vertical-text">
+                        React Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        In 2022,I have also experienced React JS to design responsive websites.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Nodejs.jpeg" alt="">
+                    <div class="vertical-text">
+                        Node.js Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I have also experience myself as a backend developer by using Node.js.
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="thirdSection">
+            <div class="leftSection">
+
+                <div>About Me</div>
+
+                <span id="element"></span>
+
+            </div>
+
+            <div class="rightSection">
+                <div>“I love developing and designing websites that are easy to use and visually appealing. With every
+                    project, I aim to combine creativity with functionality to deliver the best results.As a web
+                    developer and designer, I focus on creating modern, user-friendly websites. My goal is to design
+                    experiences that look good and work perfectly on all devices.”</div>
+            </div>
+        </section>
+        <hr>
+        <section id="services" class="forthSection">
+            <div class="leftSection">
+
+                <div>Services</div>
+                <div>We Offers</div>
+
+                <span id="element"></span>
+
+            </div>
+
+            <div class="rightSection">
+                <div>
+                    <h1 class="h1">1.Web Development Services</h1>
+
+                    <li class="li4">Custom Website Development: Building user-friendly and responsive websites tailored
+                        to client
+                        needs.</li>
+
+                    <li class="li4">Front-End Development: Creating visually appealing and interactive user interfaces
+                        with HTML,
+                        CSS,JavaScript, and modern frameworks.</li>
+                </div>
+                <div>
+                    <h1 class="h1">2.Design & Optimization</h1>
+
+                    <li class="li4">UI/UX Design: Designing attractive, easy-to-use, and engaging interfaces.</li>
+
+                    <li class="li4">Website Redesign & Revamp : Improving existing websites for modern looks and b</li>
+
+                    <li class="li4">peed & Performance Optimization :Enhancing loading speed and overall website
+                        efficiency.</li>
+                </div>
+                <div>
+                    <h1 class="h1">3.Web Designing Services</h1>
+
+                    <li class="li4">Custom Website Design:Creating unique and professional designs tailored to client
+                        needs.</li>
+
+                    <li class="li4">Responsive Design:Ensuring websites look great on all devices (mobile, tablet,
+                        desktop).</li>
+
+                </div>
+        </section>
+        <hr>
+        <section id="contact" class="fifthSection">
+            <div class="leftSection">
+
+                <div>Contact Me</div>
+
+                <span id="element"></span>
+                <div class="Contact">
+                    Email:hunaidaijaz@gmail.com
+                </div>
+                <div class="Contact">
+                    Contact no:03134576638
+
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <div>
+                    <h1 class="h13"> Name</h1>
+                    <input type="text" placeholder="Enter your Name" class="inputs" />
+                </div>
+                <div>
+                    <h1 class="h13">Email</h1>
+                    <input type="text" placeholder="Enter your Email" class="inputs" />
+
+
+                </div>
+                <div>
+                    <h1 class="h13">Comment</h1>
+                    <input type="text" placeholder="Leave Any Comment" class="inputs" />
+                </div>
+                <div>
+                    <button class="Button1">Submit</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3 class="h3">My Portfolio Website</h3>
+
+
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li class="li1">Services:</li>
+                    <li>Web Developer</li>
+                    <li>Web Designer</li>
+                    <li>Graphic Designer</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li class="li2">For Contact:</li>
+                    <li>Email:</li>
+                    <li>hunaidaijaz@gmail.com</li>
+                    <li>Call us:</li>
+                    <li>03134576638</li>
+                </ul>
+
+            </div>
+
+            <div class="footer-fourth">
+                <ul>
+                    <li class="li3">Location:</li>
+                    <li>Lahore,Pakistan.</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.My Portfolio.com| All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Web Designer.', 'Graphic Designer.', 'Video Editor.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
